@@ -10,3 +10,4 @@ images:
   gcr.io/google_containers/cluster-proportional-autoscaler-amd64: ${{ secrets.DOCKERHUB_USERNAME }}/google_containers/cluster-proportional-autoscaler-amd64
   gcr.io/google-containers/pause: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/pause
   gcr.io/google_containers/pause-amd64: ${{ secrets.DOCKERHUB_USERNAME }}/google_containers/pause-amd64
+
