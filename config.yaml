@@ -3,9 +3,10 @@ auth:
     username: ${{ secrets.DOCKERHUB_USERNAME }}
     password: ${{ secrets.DOCKERHUB_PASSWORD }}
 images:
-  k8s.gcr.io/sig-storage/csi-attacher: willdockerhub/csi-attacher
-  k8s.gcr.io/sig-storage/csi-provisioner: willdockerhub/csi-provisioner
-  k8s.gcr.io/sig-storage/csi-node-driver-registrar: willdockerhub/csi-node-driver-registrar
-  k8s.gcr.io/sig-storage/csi-resizer: willdockerhub/csi-resizer
-  k8s.gcr.io/sig-storage/csi-snapshotter: willdockerhub/csi-snapshotter
-  
+  gcr.io/google-containers/kube-apiserver: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-apiserver
+  gcr.io/google-containers/kube-proxy: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-proxy
+  gcr.io/google-containers/kube-controller-manager: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-controller-manager
+  gcr.io/google-containers/kube-scheduler: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-scheduler
+  gcr.io/google_containers/cluster-proportional-autoscaler-amd64: ${{ secrets.DOCKERHUB_USERNAME }}/google_containers/cluster-proportional-autoscaler-amd64
+  gcr.io/google-containers/pause: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/pause
+  gcr.io/google_containers/pause-amd64: ${{ secrets.DOCKERHUB_USERNAME }}/google_containers/pause-amd64
