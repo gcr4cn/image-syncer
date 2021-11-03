@@ -1,13 +1,13 @@
 auth:
   registry.hub.docker.com:
-    username: ${{ secrets.DOCKERHUB_USERNAME }}
-    password: ${{ secrets.DOCKERHUB_PASSWORD }}
+    username: DOCKERHUB_USERNAME
+    password: DOCKERHUB_PASSWORD
 images:
-  gcr.io/google-containers/kube-apiserver: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-apiserver
-  gcr.io/google-containers/kube-proxy: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-proxy
-  gcr.io/google-containers/kube-controller-manager: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-controller-manager
-  gcr.io/google-containers/kube-scheduler: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/kube-scheduler
-  gcr.io/google_containers/cluster-proportional-autoscaler-amd64: ${{ secrets.DOCKERHUB_USERNAME }}/google_containers/cluster-proportional-autoscaler-amd64
-  gcr.io/google-containers/pause: ${{ secrets.DOCKERHUB_USERNAME }}/google-containers/pause
-  gcr.io/google_containers/pause-amd64: ${{ secrets.DOCKERHUB_USERNAME }}/google_containers/pause-amd64
+  gcr.io/google-containers/kube-apiserver: DOCKERHUB_USERNAME/google-containers/kube-apiserver
+  gcr.io/google-containers/kube-proxy: DOCKERHUB_USERNAME/google-containers/kube-proxy
+  gcr.io/google-containers/kube-controller-manager: secrets.DOCKERHUB_USERNAME/google-containers/kube-controller-manager
+  gcr.io/google-containers/kube-scheduler: secrets.DOCKERHUB_USERNAME/google-containers/kube-scheduler
+  gcr.io/google_containers/cluster-proportional-autoscaler-amd64: secrets.DOCKERHUB_USERNAME/google_containers/cluster-proportional-autoscaler-amd64
+  gcr.io/google-containers/pause: secrets.DOCKERHUB_USERNAME/google-containers/pause
+  gcr.io/google_containers/pause-amd64: secrets.DOCKERHUB_USERNAME/google_containers/pause-amd64
 
