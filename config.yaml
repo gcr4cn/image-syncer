@@ -1,7 +1,7 @@
 auth:
   registry.hub.docker.com:
-    username: DOCKERHUB_USERNAME
-    password: DOCKERHUB_PASSWORD
+    username: ${{ secrets.DOCKERHUB_USERNAME }}
+    password: ${{ secrets.DOCKERHUB_PASSWORD }}
 images:
   gcr.io/google-containers/kube-apiserver: gcr4cn/google-containers-kube-apiserver
 
