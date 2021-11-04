@@ -8,5 +8,4 @@ images:
   "gcr.io/google-containers/kube-controller-manager:v1.15.11": DOCKERHUB_USERNAME/google-containers-kube-controller-manager
   "gcr.io/google-containers/kube-scheduler:v1.15.11": DOCKERHUB_USERNAME/google-containers-kube-scheduler
   "gcr.io/google_containers/cluster-proportional-autoscaler-amd64:1.6.0": DOCKERHUB_USERNAME/google_containers-cluster-proportional-autoscaler-amd64
-  "gcr.io/google-containers/pause:3.1": DOCKERHUB_USERNAME/google-containers-pause
   "gcr.io/google_containers/pause-amd64:3.1": DOCKERHUB_USERNAME/google_containers-pause-amd64
